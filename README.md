@@ -1,5 +1,7 @@
 # NgrxDemo
 
+Pequeno projeto com CRUD de pessoas, com o uso do NGRX (Redux Angular).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
 ## Development server

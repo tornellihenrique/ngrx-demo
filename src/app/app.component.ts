@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Person } from './person';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngrx-demo';
+
+  people$: Observable<Person[]>;
+
+  addNew() {
+
+  }
+
+  update(p: Person) {
+
+  }
+
+  delete(p: Person) {
+    
+  }
 }

@@ -6,7 +6,9 @@ export interface PeopleState extends EntityState<Person> {
 
 }
 
-export const peopleAdapter: EntityAdapter<Person> = createEntityAdapter<Person>();
+export const peopleAdapter: EntityAdapter<Person> = createEntityAdapter<Person>({
+    selectId: (p: Person) => p._id
+});
 
 export const initialState: PeopleState = peopleAdapter.getInitialState({});
 
